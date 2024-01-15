@@ -25,7 +25,8 @@ The returned string contains all problems formatted.
 6. There should be dashes at the bottom of each problem.
 7. The dashes should run along the entire length of each problem individually.
 
-Result of the addition or subtraction should be returned as a fourth line only if a second parameter is given as True: 
+Result of the addition or subtraction should be returned as a fourth line only if a second parameter is given as True:
+
 arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
 ```
   32         1      9999      523

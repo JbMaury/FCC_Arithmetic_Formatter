@@ -3,9 +3,11 @@
 
 Given a list of problems (ex: ["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]) return a vertically
 arranged string of every problem as in primary school:
+```
    32      3801      45      123
 + 698    -    2    + 43    +  49
 -----    ------    ----    -----
+```
 The returned string contains all problems formatted.
 
 ### Error Handling :
@@ -25,9 +27,11 @@ The returned string contains all problems formatted.
 
 Result of the addition or subtraction should be returned as a fourth line only if a second parameter is given as True: 
 arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
+```
   32         1      9999      523
 +  8    - 3801    + 9999    -  49
 ----    ------    ------    -----
-**  40     -3800     19998      474**
+  40     -3800     19998      474
+```
 
 

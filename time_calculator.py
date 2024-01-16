@@ -23,7 +23,6 @@ def add_time(start, duration, starting_day=None):
 
     # New time period
     time_period_change = (start_hour + duration_hour + surplus_hours) // 12
-    print(time_period_change)
     new_period = period
     if time_period_change % 2 == 1:
         new_period = "PM" if period == "AM" else "AM"

@@ -1,7 +1,7 @@
 def add_time(start, duration, starting_day=None):
 
     new_time = ''
-    days = ['Monday', 'tuesday', 'Wednesday', 'Thursday', 'Friday', 'saturDay', 'Sunday']
+    days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
     # Format starting time
     start_hour = int(start.split()[0].split(':')[0])
     start_minutes = int(start.split()[0].split(':')[1])
@@ -36,7 +36,7 @@ def add_time(start, duration, starting_day=None):
 
     # New day (optional)
     if starting_day:
-        index = days.index(starting_day)
+        index = days.index(starting_day.capitalize())
         new_index = (index + days_elapsed) % 7
         new_time += f', {days[new_index]}'
 
@@ -52,3 +52,4 @@ def add_time(start, duration, starting_day=None):
 
 
 print(add_time("8:16 PM", "466:02", "tuesday"))
+

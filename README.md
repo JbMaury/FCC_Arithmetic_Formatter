@@ -1,5 +1,10 @@
-# Arithmetic Arranger
-## Python project from [FreeCodeCamp](https://www.freecodecamp.org/)
+# Scientific Computic with Python
+## Python projects from [FreeCodeCamp](https://www.freecodecamp.org/)
+
+1. Arithmetic Arranger
+2. Time Calculator
+   
+## Arithmetic Arranger
 
 Given a list of problems (ex: ["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]) return a vertically
 arranged string of every problem as in primary school:

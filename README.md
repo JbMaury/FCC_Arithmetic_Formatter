@@ -45,7 +45,9 @@ arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
 
 From a string with a starting time, a duration time and (optional) a day of the week,
 return the addition of starting and duration time, with the correct time period, and (optional) the day of that time.
+
 Finally add the number of day elapsed if any.
+
 ex: add_time("11:43 PM", "24:20", "tueSday") should return "12:03 AM, Thursday (2 days later)"
 
 ### Rules

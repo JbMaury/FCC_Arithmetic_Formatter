@@ -46,8 +46,6 @@ def add_time(start, duration, starting_day=None):
     elif days_elapsed > 1:
         new_time += f' ({days_elapsed} days later)'
 
-    print(new_time)
-
     return new_time
 
 

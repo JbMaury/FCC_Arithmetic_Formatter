@@ -3,7 +3,8 @@
 
 1. Arithmetic Arranger
 2. Time Calculator
-   
+
+***
 ## Arithmetic Arranger
 
 Given a list of problems (ex: ["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]) return a vertically
@@ -39,5 +40,19 @@ arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
 ----    ------    ------    -----
   40     -3800     19998      474
 ```
+***
+## Time Calculator
 
+From a string with a starting time, a duration time and (optional) a day of the week,
+return the addition of starting and duration time, with the correct time period, and (optional) the day of that time.
+
+Finally add the number of day elapsed if any.
+
+ex: add_time("11:43 PM", "24:20", "tueSday") should return "12:03 AM, Thursday (2 days later)"
+
+### Rules
+1. Hours should be between 1 and 12.
+2. Minutes should be between 00 and 59
+3. The starting day parameter must be case insensitive
+4. When only 1 day passed the correct input is "(next day)"
 

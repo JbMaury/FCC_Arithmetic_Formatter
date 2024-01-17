@@ -2,6 +2,7 @@ import copy
 import random
 # Consider using the modules imported above.
 
+
 class Hat:
     def __init__(self, **kwargs):
         self.contents = []
@@ -27,12 +28,11 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
         actual_list = copy_hat.draw(num_balls_drawn)
         has_balls = all(actual_list.count(color) >= count for color, count in expected_balls.items())
         if has_balls:
-
             success_count += 1
 
     probability = (success_count / num_experiments)
 
-    return round(probability, 3)
+    return probability
 
 
 

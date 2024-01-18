@@ -108,3 +108,81 @@ Percentage spent by category
 4. The function get_balance() return the amount total of a category.
 5. The function check_funds() uses get_balance() to return True or False for a transaction.
 6. The percentage spent should be rounded down at the nearest 10
+
+***
+## Polygon Area Calculator
+
+Create a class Rectangle, and a Square class which inherits methods and attributes from Rectangle.
+Rectangle is initialized with width and height attributes.
+
+Each polygon must be formatted when printed :
+```
+Ex : rect = Rectangle(5, 10)
+     sq = Square(4)
+     print(rect)
+>>>  "Rectangle(width=5, height=10)"
+     print(sq)
+>>>  "Square(side=4)"
+```
+### Rules
+1. Area, Perimeter, Diagonal of the objects should be returned with 3 different methods.
+2. The method get_picture() should return a string representation of the polygon using "*" character.
+   ```
+   Ex: 7x4 rectangle is :
+   
+   *******
+   *******
+   *******
+   *******
+   ```
+3. The method get_amount_inside(shape) should return the number of passed in shape that can fit in the shape which call the method.
+```
+Ex: 
+rect = Rectangle(9, 6)  
+sq = Square(4)
+
+                      2 sq fits in rect
+ * * * * * * * * *    * * * *   * * * *
+ * * * * * * * * *    * * * *   * * * * 
+ * * * * * * * * *    * * * *   * * * * 
+ * * * * * * * * *    * * * *   * * * * 
+ * * * * * * * * * 
+ * * * * * * * * *
+ 
+rect.get_amount_inside(sq) shoul return 2
+```
+
+***
+## Probability Calculator
+
+Create a Hat class that takes a variable number of arguments.
+Arguments specify a color and a number of balls.  
+Ex:   
+new_hat = Hat(yellow=3, blue=2)  
+A new hat is initialized with a contents attribute which is a list of all balls in the form of their color name.  
+Ex:  
+new_hat.contents = [ "yellow", "yellow", "yellow", "blue", "blue"]  
+
+A draw(number) method must (pseudo)randomly draw a ball in the hat, append it to a list and remove it from the hat a given number of time.  
+The list should then be returned.
+
+Finally, an experiment() method should exist outside the class Hat.
+It takes four arguments  :  
+- hat (a hat object)
+- expected_balls (a dictionary with the balls color name and their expected count. Ex: {"yellow":3, "blue":1}
+- num_balls_drawn (a number of balls to draw from the hat in each experiment)
+- num_experiments (the number of experiments to perform)
+```
+ex:  
+hat = Hat(black=6, red=4, green=3)
+probability = experiment(
+               hat=hat,
+               expected_balls={"red":2,"green":1},
+               num_balls_drawn=5,
+               num_experiments=2000
+              )
+```
+This method should return a percentage of successful experiments where the balls that were drawn had at least those of expected_balls.
+
+
+
